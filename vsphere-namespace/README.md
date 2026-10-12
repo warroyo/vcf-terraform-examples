@@ -53,4 +53,4 @@ There is no kubeconfig needed on the machine running terraform. The supervisor w
 ## Things to know
 
 * `vsphere_namespace` cannot be imported. A namespace with the same name that terraform did not create needs to be deleted first.
-* the supervisor session token ends up in the terraform state. It only lasts a few hours, but treat the state as sensitive.
+* the vCenter password and the supervisor session token end up in the terraform state. The `http` data source stores its request headers and response there. Treat the state as a secret and use an encrypted remote backend for anything real.

@@ -1,4 +1,4 @@
-# VCF-A terraform Examples
+# VCF terraform Examples
 
 This repo contians a collection of examples how to to interact with VCF-A using terraform. 
 
@@ -15,6 +15,7 @@ This repo contians a collection of examples how to to interact with VCF-A using 
 * [Secret Store Integration](./secret-store-vks/) - deloys a cluster, registers it to argocd, creates a secret, registers the cluster with secrets store service and installs the vault injetcor in the cluster
 * [Cluster Policy](./cluster-policy/) - creates a VKS cluster management policy (ClusterPolicy) using the 9.1 cluster policy APIs, at the org, project, or cluster scope
 * [Custom Cluster Policy](./cluster-policy-custom/) - defines a custom policy template (OPA Gatekeeper) and applies a custom ClusterPolicy from it to a project
+* [vSphere Namespace](./vsphere-namespace/) - creates a supervisor namespace directly in vCenter with the `vsphere` provider (no VCF-A) and deploys a simple config map into it
 
 
 ## FAQ
